@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Add your custom CSS styles here (if needed) -->
+</head>
+<body>
+    <!-- Sidebar navigation -->
+    <div class="navbar-side">
+        <h6>
+            <span class="icon"><i class="fas fa-code"></i></span>
+            <span class="link-text">Admin Panel</span>
+        </h6>
+        <ul>
+            <li><a href="#" class="link-active" title="Dashboard">
+                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                <span class="link-text">Dashboard</span>
+            </a></li>
+            <!-- Add more menu items for other sections (e.g., Users, Posts, Categories, etc.) -->
+            <!-- Example: -->
+            <li>
+                <a href="#" class="myBtn" data-toggle="collapse" data-target="#user-sub" title="Users" aria-expanded="false">
+                    <span class="icon"><i class="fas fa-users"></i></span>
+                    <span class="link-text">Users</span>
+                    <span class="ml-auto myCaret"></span>
+                </a>
+                <div id="user-sub" class="collapse bg-secondary">
+                    <a href="#" title="All Users">
+                        <span class="icon"><i class="fas fa-list"></i></span>
+                        <span class="link-text">All Users</span>
+                    </a>
+                    <!-- Add more sub-menu items (e.g., Add User, User Profile, etc.) -->
+                </div>
+            </li>
+            <!-- Add other menu items as needed -->
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+        <!-- Top navigation bar -->
+        <nav class="navbar navbar-dark bg-dark py-1">
+            <a href="#" id="navBtn">
+                <span id="changeIcon" class="fa fa-bars text-light"></span>
+            </a>
+            <div class="d-flex">
+                <a class="nav-link text-light px-2" href="#"><i class="fas fa-search"></i></a>
+                <a class="nav-link text-light px-2" href="#"><i class="fas fa-bell"></i></a>
+                <a class="nav-link text-light px-2" href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </nav>
+
+        <!-- User statistics cards -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Example: Total Users -->
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="card border-primary rounded-0">
+                        <div class="card-header bg-primary rounded-0">
+                            <h5 class="card-title text-white mb-1">Total Users</h5>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="display-4 font-weight-bold text-primary text-center">105</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards for other user-related statistics -->
+            </div>
+        </div>
+
+        <!-- Other content goes here -->
+        <!-- Example: User table displaying user details -->
+        <!-- You can use Bootstrap tables or other components to display user information -->
+    </div>
+
+    <!-- Add your custom JavaScript (if needed) -->
+</body>
+</html>
